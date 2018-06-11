@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/index.js",
     "setup:db": "node db/schemas/index.js",
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "seed": "psql ratings hodempsey < db/sql/seed.sql"
   },
   "repository": {
     "type": "git",
