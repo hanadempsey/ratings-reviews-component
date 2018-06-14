@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   getReviews() {
-    axios.get('/api/reviews')
+    axios.get('http://localhost:1111/api/reviews')
     .then(({ data }) => {
       console.log('data from get request', data)
       this.setState({
@@ -29,14 +29,30 @@ class App extends Component {
     .catch(err => console.log('error in get request'))
   }
 
+  writeReview(data) {
+    axios.post('http://localhost:1111/api/reviews', {
+      params: {
+        review: data
+      }
+    })
+    .then(data => {
+      console.log("data in post", data)
+    })
+    .catch(err => {
+      console.log('there was an error in post')
+    })
+  }
+
 
   render() {
     return (
+      <div className='reviewsApp'>
       <div className={styles.reviews}>
         <div>
           <TopBar />
           <Reviews reviews={this.state.reviews}/>
         </div>
+      </div>
       </div>
     )
   }

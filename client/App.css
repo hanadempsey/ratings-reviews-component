@@ -89,6 +89,7 @@ html, body {
   top: 0;
   left: 0;
   overflow: hidden;
+  margin: auto;
 }
 
 .starRatingcss .Bottom {
@@ -247,4 +248,8 @@ html, body {
   position: relative;
   float: right;
   font-size: 18px;
+}
+
+.glyphLikeBtn {
+ 
 }

@@ -1,4 +1,6 @@
 const path = require('path');
+const CompressionPlugin = require('compression-webpack-plugin');
+const webpack = require('webpack')
 
 const SRC_DIR = path.resolve(__dirname, 'client');
 const BUILD_DIR = path.resolve(__dirname, 'static');
@@ -16,7 +18,7 @@ module.exports = {
         exclude: [/node_modules/],
         use: [{
           loader: 'babel-loader',
-          options: { presets: ['es2015', 'react'] }
+          options: { presets: ['env', 'react'] }
         }],
       },
       {

@@ -3,6 +3,7 @@ import Header from './reviewsComponents/Header.jsx';
 import AllReviews from './reviewsComponents/AllReviews.jsx';
 import styles from '../../App.css';
 import axios from 'axios';
+import { Glyphicon } from 'react-bootstrap';
 
 
 class Reviews extends Component {
@@ -50,7 +51,7 @@ class Reviews extends Component {
               <div className={styles.otherFacts}>
                 <span>Verified Purchase: <span className={styles.facts}>{review.verified_purchase}</span> </span><span className={styles.line}>|</span><span> Condition: <span className={styles.facts}>{review.condition}</span> </span><span className={styles.line}>|</span><span> Sold by: <span className={styles.facts}>{review.seller}</span></span>
               </div>
-              <div><span className={styles.likeButton}>Button</span> <span className={styles.dislikeButton}>Button</span></div>
+              <div><span className={styles.likeButton}><button><Glyphicon glyph='thumbs-up'>{review.likes}</Glyphicon></button></span> <span className={styles.dislikeButton}><button className={styles.glyphLikeBtn}><Glyphicon glyph='thumbs-down' bsSize="small">{review.dislikes}</Glyphicon></button></span></div>
             </div>
           </div>
           )
