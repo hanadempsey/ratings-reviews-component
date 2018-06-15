@@ -15,8 +15,6 @@ class Reviews extends Component {
     }
   }
 
-
-
   render() {
     let stars = [];
     

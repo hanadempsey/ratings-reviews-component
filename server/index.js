@@ -8,7 +8,7 @@ require('../db/config');
 
 const { router } = require('./router')
 const app = express();
-const PORT = 1111;
+const PORT = process.env.PORT || 1111;
 const HOST = '0.0.0.0';
 
 app.use(cors())

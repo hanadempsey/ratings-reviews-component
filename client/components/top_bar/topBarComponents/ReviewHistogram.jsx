@@ -22,11 +22,7 @@ class ReviewHistogram extends Component {
         <div className={[styles.progressContainer, styles.roundBar].join(" ")}>
           <div className={[styles.progressBar, styles.roundBar].join(" ")} style={{ width: `${this.props.stars[5]/this.props.count*100}%` }}></div>
         </div>
-        
-        
         </div>
-        
-
         <div className={styles.reviewBar}>
         <div >
         <span className={styles.reviewStar}>★</span> 4

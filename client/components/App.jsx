@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   getReviews() {
-    axios.get('http://localhost:1111/api/reviews')
+    axios.get('/api/reviews')
     .then(({ data }) => {
       console.log('data from get request', data)
       this.setState({
@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   writeReview(data) {
-    axios.post('http://localhost:1111/api/reviews', {
+    axios.post('/api/reviews', {
       params: {
         review: data
       }

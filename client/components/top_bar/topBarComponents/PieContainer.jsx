@@ -5,11 +5,6 @@ import ProgressBar from 'progressbar.js';
 class PieContainer extends Component {
   constructor() {
     super();
-
-    this.state = {
-
-
-    }
   }
 
   componentDidMount() {
@@ -33,8 +28,6 @@ class PieContainer extends Component {
     return (
       <div>
         <div id='pieContainer' className={styles.pieContainer}></div>
-
-
       </div>
 
     )

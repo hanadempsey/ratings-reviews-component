@@ -6,18 +6,9 @@ class ContentWrap extends Component {
     super(props);
 
     this.state = {
-      // percentage : '"' + (this.props.percentage) + '%"'
     }
 
   }
-
-  // componentDidMount() {
-  //   this.setState({
-  //     starPercentage: (this.props.average/5)
-  //   }, () => {
-  //     console.log("this.state.starPercentage:", this.state.starPercentage)
-  //   })
-  // }
 
   render() {
     console.log('percentage:', this.props.percentage)
@@ -48,7 +39,6 @@ class ContentWrap extends Component {
           <span className={styles.productRatings}>{this.props.reviewAmount} product ratings</span>
         </div>
       </div>
-
 
     )
   }
