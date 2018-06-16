@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReviewHeader from './topBarComponents/ReviewHeader.jsx';
 import ContentWrap from './topBarComponents/ContentWrap.jsx';
 import ReviewHistogram from './topBarComponents/ReviewHistogram.jsx';
 import PieContainer from './topBarComponents/PieContainer.jsx';
@@ -25,7 +24,7 @@ class TopBar extends Component {
   }
 
   getAverageRating() {
-    axios.get('/api/rating')
+    axios.get('http://ec2-34-219-117-99.us-west-2.compute.amazonaws.com:1111/api/rating')
       .then(({ data }) => {
         console.log('data on get', data)
         this.setState({

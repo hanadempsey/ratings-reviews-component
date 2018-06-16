@@ -19,7 +19,7 @@ class App extends Component {
   }
 
   getReviews() {
-    axios.get('/api/reviews')
+    axios.get('http://ec2-34-219-117-99.us-west-2.compute.amazonaws.com:1111/api/reviews')
     .then(({ data }) => {
       console.log('data from get request', data)
       this.setState({
@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   writeReview(data) {
-    axios.post('/api/reviews', {
+    axios.post('http://ec2-34-219-117-99.us-west-2.compute.amazonaws.com:1111/api/reviews', {
       params: {
         review: data
       }

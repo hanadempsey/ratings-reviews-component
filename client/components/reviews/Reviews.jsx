@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Header from './reviewsComponents/Header.jsx';
-import AllReviews from './reviewsComponents/AllReviews.jsx';
 import styles from '../../App.css';
 import axios from 'axios';
 import { Glyphicon } from 'react-bootstrap';

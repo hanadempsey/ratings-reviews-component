@@ -4,7 +4,7 @@ services:
   web:
     build: .
     command: bash -c "npm start && npm run setup:db"
-    image: hdempsey/ratings
+    image: hdempsey/ratings:server
     ports:
       - "1111:1111"
     volumes:
