@@ -24,7 +24,7 @@ class TopBar extends Component {
   }
 
   getAverageRating() {
-    axios.get('http://ec2-34-219-117-99.us-west-2.compute.amazonaws.com:1111/api/rating')
+    axios.get('/api/rating')
       .then(({ data }) => {
         console.log('data on get', data)
         this.setState({
